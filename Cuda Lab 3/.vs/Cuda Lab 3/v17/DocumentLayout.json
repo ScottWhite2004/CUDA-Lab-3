@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\712769\\source\\repos\\Cuda Lab 3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{75E31D9E-3737-4358-B3E5-1E8D486320E6}|Cuda Lab Exercise 2\\Cuda Lab Exercise 2.vcxproj|C:\\Users\\712769\\source\\repos\\Cuda Lab 3\\Cuda Lab Exercise 2\\kernel.cu||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{75E31D9E-3737-4358-B3E5-1E8D486320E6}|Cuda Lab Exercise 2\\Cuda Lab Exercise 2.vcxproj|solutionrelative:Cuda Lab Exercise 2\\kernel.cu||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC9D85F5-6A2D-4B8C-A975-B8D8D3D5E061}|Cuda Lab 3\\Cuda Lab 3.vcxproj|C:\\Users\\712769\\source\\repos\\Cuda Lab 3\\Cuda Lab 3\\kernel.cu||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{BC9D85F5-6A2D-4B8C-A975-B8D8D3D5E061}|Cuda Lab 3\\Cuda Lab 3.vcxproj|solutionrelative:Cuda Lab 3\\kernel.cu||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "kernel.cu",
+              "DocumentMoniker": "C:\\Users\\712769\\source\\repos\\Cuda Lab 3\\Cuda Lab Exercise 2\\kernel.cu",
+              "RelativeDocumentMoniker": "Cuda Lab Exercise 2\\kernel.cu",
+              "ToolTip": "C:\\Users\\712769\\source\\repos\\Cuda Lab 3\\Cuda Lab Exercise 2\\kernel.cu",
+              "RelativeToolTip": "Cuda Lab Exercise 2\\kernel.cu",
+              "ViewState": "AgIAAAkAAAAAAAAAAAASwBwAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-02-18T14:29:44.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "kernel.cu",
+              "DocumentMoniker": "C:\\Users\\712769\\source\\repos\\Cuda Lab 3\\Cuda Lab 3\\kernel.cu",
+              "RelativeDocumentMoniker": "Cuda Lab 3\\kernel.cu",
+              "ToolTip": "C:\\Users\\712769\\source\\repos\\Cuda Lab 3\\Cuda Lab 3\\kernel.cu",
+              "RelativeToolTip": "Cuda Lab 3\\kernel.cu",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-02-18T13:42:04.286Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
