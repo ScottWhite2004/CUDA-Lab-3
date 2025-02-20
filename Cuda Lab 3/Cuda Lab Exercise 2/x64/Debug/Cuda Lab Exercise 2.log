@@ -1,39 +1,14 @@
 ﻿  Compiling CUDA source file kernel.cu...
   
-  C:\Users\712769\source\repos\Cuda Lab 3\Cuda Lab Exercise 2>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.42.34433\bin\HostX64\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\include"  -G   --keep-dir x64\Debug  -maxrregcount=0   --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/Fdx64\Debug\vc143.pdb" -o "C:\Users\712769\source\repos\Cuda Lab 3\Cuda Lab Exercise 2\x64\Debug\kernel.cu.obj" "C:\Users\712769\source\repos\Cuda Lab 3\Cuda Lab Exercise 2\kernel.cu" 
-C:\Users\712769\source\repos\Cuda Lab 3\Cuda Lab Exercise 2\kernel.cu(27): error : no instance of overloaded function "cudaMallocManaged" matches the argument list
-              argument types are: (int (*)[5Ui64], unsigned long long)
-        cudaMallocManaged(&a, arraySize * sizeof(int));
-        ^
-  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\include\cuda_runtime.h(629): note #3327-D: candidate function template "cudaMallocManaged(T **, size_t, unsigned int)" failed deduction
-    static __inline __declspec(__host__) cudaError_t cudaMallocManaged(
-                                                     ^
-  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\include\cuda_runtime_api.h(5295): note #3326-D: function "cudaMallocManaged(void **, size_t, unsigned int)" does not match because argument #1 does not match parameter
-    extern __declspec(__host__) __declspec(__cudart_builtin__) cudaError_t __stdcall cudaMallocManaged(void **devPtr, size_t size, unsigned int flags = 0x01);
-                                                                                     ^
+  C:\Users\712769\OneDrive - hull.ac.uk\GitHub\CUDA-Lab-3\Cuda Lab 3\Cuda Lab Exercise 2>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.42.34433\bin\HostX64\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\include"  -G   --keep-dir x64\Debug  -maxrregcount=0   --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/Fdx64\Debug\vc143.pdb" -o "C:\Users\712769\OneDrive - hull.ac.uk\GitHub\CUDA-Lab-3\Cuda Lab 3\Cuda Lab Exercise 2\x64\Debug\kernel.cu.obj" "C:\Users\712769\OneDrive - hull.ac.uk\GitHub\CUDA-Lab-3\Cuda Lab 3\Cuda Lab Exercise 2\kernel.cu" 
+C:\Users\712769\OneDrive - hull.ac.uk\GitHub\CUDA-Lab-3\Cuda Lab 3\Cuda Lab Exercise 2\kernel.cu(29): error : too many initializer values
+        a[arraySize] = { 1,2,3,4,5 };
+                           ^
   
-C:\Users\712769\source\repos\Cuda Lab 3\Cuda Lab Exercise 2\kernel.cu(28): error : no instance of overloaded function "cudaMallocManaged" matches the argument list
-              argument types are: (int (*)[5Ui64], unsigned long long)
-        cudaMallocManaged(&b, arraySize * sizeof(int));
-        ^
-  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\include\cuda_runtime.h(629): note #3327-D: candidate function template "cudaMallocManaged(T **, size_t, unsigned int)" failed deduction
-    static __inline __declspec(__host__) cudaError_t cudaMallocManaged(
-                                                     ^
-  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\include\cuda_runtime_api.h(5295): note #3326-D: function "cudaMallocManaged(void **, size_t, unsigned int)" does not match because argument #1 does not match parameter
-    extern __declspec(__host__) __declspec(__cudart_builtin__) cudaError_t __stdcall cudaMallocManaged(void **devPtr, size_t size, unsigned int flags = 0x01);
-                                                                                     ^
+C:\Users\712769\OneDrive - hull.ac.uk\GitHub\CUDA-Lab-3\Cuda Lab 3\Cuda Lab Exercise 2\kernel.cu(30): error : too many initializer values
+        b[arraySize] = { 10,20,30,40,50 };
+                            ^
   
-C:\Users\712769\source\repos\Cuda Lab 3\Cuda Lab Exercise 2\kernel.cu(29): error : no instance of overloaded function "cudaMallocManaged" matches the argument list
-              argument types are: (int (*)[5Ui64], unsigned long long)
-        cudaMallocManaged(&c, arraySize * sizeof(int));
-        ^
-  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\include\cuda_runtime.h(629): note #3327-D: candidate function template "cudaMallocManaged(T **, size_t, unsigned int)" failed deduction
-    static __inline __declspec(__host__) cudaError_t cudaMallocManaged(
-                                                     ^
-  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\include\cuda_runtime_api.h(5295): note #3326-D: function "cudaMallocManaged(void **, size_t, unsigned int)" does not match because argument #1 does not match parameter
-    extern __declspec(__host__) __declspec(__cudart_builtin__) cudaError_t __stdcall cudaMallocManaged(void **devPtr, size_t size, unsigned int flags = 0x01);
-                                                                                     ^
-  
-  3 errors detected in the compilation of "C:/Users/712769/source/repos/Cuda Lab 3/Cuda Lab Exercise 2/kernel.cu".
+  2 errors detected in the compilation of "C:/Users/712769/OneDrive - hull.ac.uk/GitHub/CUDA-Lab-3/Cuda Lab 3/Cuda Lab Exercise 2/kernel.cu".
   kernel.cu
-C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Microsoft\VC\v170\BuildCustomizations\CUDA 12.4.targets(799,9): error MSB3721: The command ""C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.42.34433\bin\HostX64\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\include"  -G   --keep-dir x64\Debug  -maxrregcount=0   --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/Fdx64\Debug\vc143.pdb" -o "C:\Users\712769\source\repos\Cuda Lab 3\Cuda Lab Exercise 2\x64\Debug\kernel.cu.obj" "C:\Users\712769\source\repos\Cuda Lab 3\Cuda Lab Exercise 2\kernel.cu"" exited with code 2.
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Microsoft\VC\v170\BuildCustomizations\CUDA 12.4.targets(799,9): error MSB3721: The command ""C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.42.34433\bin\HostX64\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\include"  -G   --keep-dir x64\Debug  -maxrregcount=0   --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/Fdx64\Debug\vc143.pdb" -o "C:\Users\712769\OneDrive - hull.ac.uk\GitHub\CUDA-Lab-3\Cuda Lab 3\Cuda Lab Exercise 2\x64\Debug\kernel.cu.obj" "C:\Users\712769\OneDrive - hull.ac.uk\GitHub\CUDA-Lab-3\Cuda Lab 3\Cuda Lab Exercise 2\kernel.cu"" exited with code 2.
